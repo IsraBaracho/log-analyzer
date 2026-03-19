@@ -1,0 +1,35 @@
+{
+  "parser": "@typescript-eslint/parser",
+  "parserOptions": {
+    "ecmaVersion": 2022,
+    "sourceType": "module",
+    "project": "./tsconfig.json"
+  },
+  "plugins": ["@typescript-eslint"],
+  "extends": [
+    "eslint:recommended",
+    "plugin:@typescript-eslint/recommended"
+  ],
+  "rules": {
+    /* REGRAS DE CÓDIGO LIMPO */
+    "no-console": "off",                           // Permite console.log (útil para logs)
+    "@typescript-eslint/no-unused-vars": "warn",   // Avisa sobre variáveis não usadas
+    "@typescript-eslint/explicit-function-return-type": "off", // Não obriga tipo de retorno explícito
+    "@typescript-eslint/no-explicit-any": "warn",  // Avisa quando usar 'any'
+    
+    /* ESTILO DE CÓDIGO */
+    "semi": ["error", "always"],                   // Obriga ponto e vírgula
+    "quotes": ["error", "single"],                 // Usa aspas simples
+    "indent": ["error", 2],                        // Indentação de 2 espaços
+    "comma-dangle": ["error", "always-multiline"], // Vírgula no final de objetos/arrays multilinha
+    
+    /* BOAS PRÁTICAS */
+    "no-var": "error",                             // Proíbe 'var', só 'let' e 'const'
+    "prefer-const": "error",                       // Prefere 'const' quando possível
+    "eqeqeq": ["error", "always"]                  // Força usar === em vez de ==
+  },
+  "env": {
+    "node": true,
+    "es2022": true
+  }
+}

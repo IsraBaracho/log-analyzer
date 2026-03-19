@@ -1,0 +1,36 @@
+{
+  "compilerOptions": {
+    /* CONFIGURAÇÕES BÁSICAS */
+    "target": "ES2022",                    // Versão do JavaScript que será gerado
+    "module": "commonjs",                  // Sistema de módulos (Node.js usa CommonJS)
+    "lib": ["ES2022"],                     // Bibliotecas JavaScript disponíveis
+    
+    /* PASTAS */
+    "rootDir": "./src",                    // Onde está o código TypeScript
+    "outDir": "./dist",                    // Onde o JavaScript compilado será salvo
+    
+    /* VERIFICAÇÕES ESTRITAS */
+    "strict": true,                        // Ativa TODAS as verificações estritas
+    "noImplicitAny": true,                 // Proíbe usar 'any' implicitamente
+    "strictNullChecks": true,              // Força verificação de null/undefined
+    "strictFunctionTypes": true,           // Verificação estrita de tipos em funções
+    "strictPropertyInitialization": true,  // Propriedades de classe devem ser inicializadas
+    "noUnusedLocals": true,                // Avisa sobre variáveis não usadas
+    "noUnusedParameters": true,            // Avisa sobre parâmetros não usados
+    "noImplicitReturns": true,             // Funções devem sempre retornar algo
+    
+    /* MÓDULOS */
+    "moduleResolution": "node",            // Como o TS resolve imports (padrão Node.js)
+    "esModuleInterop": true,               // Compatibilidade com módulos ES6
+    "resolveJsonModule": true,             // Permite importar arquivos .json
+    
+    /* OUTROS */
+    "skipLibCheck": true,                  // Pula verificação de tipos em node_modules
+    "forceConsistentCasingInFileNames": true, // Nomes de arquivo case-sensitive
+    "declaration": true,                   // Gera arquivos .d.ts (definições de tipos)
+    "declarationMap": true,                // Mapeia .d.ts para .ts (útil para debug)
+    "sourceMap": true                      // Gera source maps (debug no VS Code)
+  },
+  "include": ["src/**/*"],                 // Quais arquivos compilar
+  "exclude": ["node_modules", "dist"]      // Quais ignorar
+}
