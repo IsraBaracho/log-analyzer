@@ -1,6 +1,5 @@
 # 📊 Log Analyzer
 
-Sistema inteligente de análise de logs com múltiplas estruturas de dados implementadas do zero.
 
 ## 🎯 Objetivo
 
